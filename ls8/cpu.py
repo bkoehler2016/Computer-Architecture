@@ -23,7 +23,7 @@ class CPU:
         address = 0
 
         if len(sys.argv) != 2:
-            print("usage: ls8.py progname")
+            print("Need a second file name")
             sys.exit(1)
 
         try:
