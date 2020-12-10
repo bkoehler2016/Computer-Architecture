@@ -146,7 +146,7 @@ class CPU:
                 self.pc += 2
             elif ir == CALL:
                 return_address = self.pc + 2
-                SP -= 1 
+                SP -= 1
                 self.ram_write(return_address, SP)
                 self.pc = self.reg[operand_a]
             elif ir == RET:
